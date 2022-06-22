@@ -27,7 +27,7 @@ class Piramide extends Figura3D {
   }
 
   getVolume() {
-    return (this.getPerimetr * this.hight) / 3;
+    return (this.getPerimetr() * this.hight) / 3;
   }
 }
 const per = new Piramide(3, 4, 5, 2);
@@ -54,7 +54,7 @@ class Cylinder extends Figura3D{
   }
 
   getVolume() {
-    return this.getPerimetr * this.hight;
+    return this.getPerimetr() * this.hight;
   }
 }
 
